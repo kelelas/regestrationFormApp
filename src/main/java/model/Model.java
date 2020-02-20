@@ -1,23 +1,20 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Model {
-    private String surname;
-    private String login;
 
-    public String getSurname() {
-        return surname;
+   private  List<Record> records = new ArrayList<Record>();
+
+    public List<Record> getRecords() {
+        return records;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setRecords(List<Record> records) {
+        this.records = records;
     }
-
-    public String getLogin() {
-        return login;
+    public void setOneRecord(Record record) {
+        records.add(record);
     }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
 }
